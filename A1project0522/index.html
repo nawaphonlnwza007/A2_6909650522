@@ -1,79 +1,96 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>My First Learning Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Portfolio - A2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-light">
 
-  <header>
-    <h1>My First Learning Portfolio</h1>
-  </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">My Learning Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">My Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <img src="media/IMG_8710.JPG" alt="รูปโปรไฟล์นักศึกษา" class="profile-img">
-      <p><strong>ชื่อ-นามสกุล:</strong> นวพร สมพงศ์</p>
-      <p><strong>รหัสนักศึกษา:</strong> 6909650522</p>
-      <p><strong>กำลังศึกษาที่:</strong> มหาวิทยาลัยธรรมศาสตร์ศูนย์รังสิต คณะวิทยาศาสตร์และเทคโนโลยี สาขาวิทยาการคอมพิวเตอร์โครงการพิเศษ</p>
-      <p><strong>เกี่ยวกับฉัน:</strong> ชอบแมว ชอบหมา ชอบหนูหน่อยได้ไหม</p>
-    </section>
+    <div class="container my-5">
+        
+        <section id="about" class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h2 class="text-primary border-bottom pb-2 mb-4">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <img src="media/IMG_8710.JPG" alt="รูปโปรไฟล์นักศึกษา" class="img-fluid rounded-circle shadow" style="max-width: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <p><strong>ชื่อ-นามสกุล:</strong> นวพร สมพงศ์</p>
+                    <p><strong>รหัสนักศึกษา:</strong> 6909650522</p>
+                    <p><strong>กำลังศึกษาที่:</strong> มหาวิทยาลัยธรรมศาสตร์ศูนย์รังสิต คณะวิทยาศาสตร์และเทคโนโลยี สาขาวิชาการคอมพิวเตอร์โครงการพิเศษ</p>
+                    <p><strong>เกี่ยวกับฉัน:</strong> ชอบแมว ชอบหมา ชอบหนูหน่อยได้ไหม</p>
+                </div>
+            </div>
+        </section>
 
-    <section>
-      <h2>What I Built</h2>
-      <p>งานนี้เป็นการสร้างเว็บไซต์ My First Learning Portfolio โดยเน้นการออกแบบให้เข้าใจสไตล์ของผู้เขียนเว็บมากที่สุดเพื่อแนะนำความเป็นตัวเองตกแต่งองค์ประกอบด้วยสีสันเพื่อความน่ารัก โดยภายในเว็บ</p>
-      <p><strong>องค์ประกอบสำคัญในเว็บไซต์:</strong></p>
-      <ul>
-        <li><strong>ส่วนหัว (Header):</strong> แสดงชื่อเว็บไซต์และคำอธิบายสั้นๆ</li>
-        <li><strong>ส่วนแนะนำตัว (About Me):</strong> แสดงข้อมูลส่วนตัว พร้อมรูปภาพโปรไฟล์</li>
-        <li><strong>อธิบายชิ้นงาน (What I Built):</strong> สรุปภาพรวมของเว็บไซต์และอธิบายหลักการ Client / Server</li>
-        <li><strong>ขั้นตอนการพัฒนา (How I Built It):</strong> แสดงลำดับขั้นตอนการทำงาน และระบุแหล่งข้อมูลอ้างอิง</li>
-        <li><strong>การสะท้อนความคิด (Reflection):</strong> สรุปปัญหาที่พบ สิ่งที่ได้เรียนรู้ และแนวทางการพัฒนาต่อ</li>
-      </ul>
-    </section>
+        <section id="portfolio" class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h2 class="text-primary border-bottom pb-2 mb-4">My Portfolio</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/IMG_8710.JPG" class="card-img-top" alt="Project 1" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">A1: HTML/CSS Basic Website</h5>
+                            <p class="card-text">การสร้างเว็บไซต์แรกด้วย HTML และ CSS แบบพื้นฐาน โครงสร้างเว็บ และการจัดสไตล์ด้วยตัวตนของฉันเอง</p>
+                        </div>
+                    </div>
+                </div>
 
-    <section>
-      <h2>How I Built It</h2>
-      <p>ขั้นตอนการพัฒนางานชิ้นนี้:</p>
-      <ol>
-        <li>วางแผนโครงสร้างเนื้อหาตามโจทย์ที่อาจารย์ให้มา</li>
-        <li>สร้างไฟล์ HTML โดยใช้ Semantic Elements (header, main, section, footer)</li>
-        <li>สร้างไฟล์ <code>style.css</code> แยกต่างหากเพื่อจัดรูปแบบและ Layout</li>
-        <li>ตรวจสอบความเรียบร้อยหน้าเว็บบอร์ดก่อนส่ง</li>
-      </ol>
-      <p><strong>เครื่องมือและแหล่งข้อมูลที่ใช้:</strong> ใช้ VS Code เป็นเครื่องมือหลักในการเขียนโค้ด และเปิดสไลด์การเรียนรู้ของอาจารย์ควบคู่ไปกับกูเกิล (เรื่องที่ไม่รู้) ในการทำงาน</p>
-    </section>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/469A2232-6B1E-4FC2-9D2A-FB52AACE908D.jpg" class="card-img-top" alt="Project 2" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">A2: Responsive Portfolio with Bootstrap</h5>
+                            <p class="card-text">การพัฒนาเว็บไซต์แบบ Responsive รองรับการแสดงผลทุกอุปกรณ์ด้วย Bootstrap CDN พร้อมตั้งค่าระบบส่งโค้ดอัตโนมัติขึ้น GitHub Pages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-      <h2>Reflection</h2>
-      <article>
-        <h3>ปัญหาและความท้าทายที่พบ</h3>
-        <p>มีการไม่เข้าใจโค้ดบ้างแต่ดูจากสไลด์ของอาจารย์ก็ทำให้เข้าใจและสามารถทำงานได้</p>
-      </article>
+        <section class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h2 class="text-primary border-bottom pb-2 mb-4">What I Built & Reflection</h2>
+            <h5>องค์ประกอบสำคัญในเว็บไซต์:</h5>
+            <ul>
+                <li><strong>ส่วนหัว (Navbar):</strong> แถบเมนูแบบ Responsive ปรับขนาดได้บนมือถือและคอมพิวเตอร์</li>
+                <li><strong>ส่วนแนะนำตัว (About Me):</strong> แสดงข้อมูลส่วนตัว พร้อมรูปโปรไฟล์ด้วย Grid System</li>
+                <li><strong>ผลงาน (Portfolio):</strong> แสดงผลงาน 2 รายการด้วย Bootstrap Cards</li>
+                <li><strong>การสะท้อนความคิด (Reflection):</strong> สรุปสิ่งที่ได้เรียนรู้ การปรับใช้ Bootstrap และแนวทางการพัฒนาต่อยอด</li>
+            </ul>
+        </section>
 
-      <article>
-        <h3>สิ่งที่ได้เรียนรู้</h3>
-        <p>เข้าใจการแยกบทบาทระหว่าง HTML (โครงสร้าง) และ CSS (การจัดสไตล์) มากขึ้นกว่าในห้องเรียนเพราะได้ลงมือทำ</p>
-      </article>
-
-      <article>
-        <h3>สิ่งที่อยากปรับปรุงเพิ่มเติม</h3>
-        <p>อยากเขียนเว็บให้คล่องมากยิ่งขึ้นและสะสมเทคนิคเยอะ เพื่อพัฒนาหน้าเว็บให้น่ารักและดึงดูดผู้เข้าชมมากยิ่งขึ้น</p>
-      </article>
-    </section>
-  </main>
-
-  <footer id="footer">
-    <div class="footer-content">
-      <h3>Contact Me</h3>
-      <div class="contact-items">
-        <p><strong>Line ID:</strong> pinpin1311</p>
-        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/naws4p" target="_blank">naws4p</a></p>
-      </div>
     </div>
-  </footer>
 
+    <footer id="contact" class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <h3>Contact Me</h3>
+            <p class="mb-1"><strong>Line ID:</strong> pinpin1311</p>
+            <p class="mb-0"><strong>Instagram:</strong> <a href="https://www.instagram.com/naws4p" target="_blank" class="text-info text-decoration-none">naws4p</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
 </body>
 </html>
