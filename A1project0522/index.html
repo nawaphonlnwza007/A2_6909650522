@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Learning Portfolio - A2</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-light">
@@ -28,14 +26,11 @@
     </nav>
 
     <div class="container my-5">
-        
+
         <section id="about" class="mb-5 p-4 bg-white rounded shadow-sm">
             <h2 class="text-primary border-bottom pb-2 mb-4">About Me</h2>
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center mb-3 mb-md-0">
-                    <img src="media/IMG_8710.JPG" alt="รูปโปรไฟล์นักศึกษา" class="img-fluid rounded-circle shadow" style="max-width: 200px;">
-                </div>
-                <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-12">
                     <p><strong>ชื่อ-นามสกุล:</strong> นวพร สมพงศ์</p>
                     <p><strong>รหัสนักศึกษา:</strong> 6909650522</p>
                     <p><strong>กำลังศึกษาที่:</strong> มหาวิทยาลัยธรรมศาสตร์ศูนย์รังสิต คณะวิทยาศาสตร์และเทคโนโลยี สาขาวิชาการคอมพิวเตอร์โครงการพิเศษ</p>
@@ -49,48 +44,29 @@
             <div class="row g-4">
                 
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <img src="media/IMG_8710.JPG" class="card-img-top" alt="Project 1" style="height: 200px; object-fit: cover;">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">A1: HTML/CSS Basic Website</h5>
-                            <p class="card-text">การสร้างเว็บไซต์แรกด้วย HTML และ CSS แบบพื้นฐาน โครงสร้างเว็บ และการจัดสไตล์ด้วยตัวตนของฉันเอง</p>
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body p-4">
+                            <span class="badge bg-secondary mb-2">Course Assignment</span>
+                            <h4 class="card-title text-primary fw-bold">A1: My First Learning Portfolio</h4>
+                            <p class="text-muted small"><strong>Date:</strong> Aug 2026 | <strong>Role:</strong> Individual Developer</p>
+                            <p class="card-text">พัฒนาเว็บไซต์ Learning Portfolio หน้าเดียวด้วย HTML และ CSS พื้นฐาน เพื่อฝึกโครงสร้าง Semantic HTML และการจัดหน้าเว็บ</p>
+                            <p class="mb-1"><strong>Skills:</strong> HTML, CSS, Semantic HTML</p>
+                            
+                            <hr class="my-3">
+                            
+                            <h6 class="fw-bold text-dark">Reflection:</h6>
+                            <ul class="small text-secondary ps-3 mb-4">
+                                <li><strong>What I did:</strong> สร้างเว็บไซต์แนะนำตัวและสรุปงาน A1 ด้วย HTML/CSS</li>
+                                <li><strong>What I learned:</strong> เข้าใจการทำงานร่วมกันของ HTML และ CSS รวมถึงพื้นฐาน Client-side rendering</li>
+                                <li><strong>Challenge:</strong> จัดการเรื่อง Layout และ Spacing ให้ดูสะอาดตา แก้ไขโดยศึกษาและปรับค่า Margin/Padding ทีละจุด</li>
+                                <li><strong>Next step:</strong> ต้องการพัฒนาต่อยอดให้รองรับ Responsive หลายขนาดหน้าจอด้วย Bootstrap ในงาน A2</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <img src="media/469A2232-6B1E-4FC2-9D2A-FB52AACE908D.jpg" class="card-img-top" alt="Project 2" style="height: 200px; object-fit: cover;">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">A2: Responsive Portfolio with Bootstrap</h5>
-                            <p class="card-text">การพัฒนาเว็บไซต์แบบ Responsive รองรับการแสดงผลทุกอุปกรณ์ด้วย Bootstrap CDN พร้อมตั้งค่าระบบส่งโค้ดอัตโนมัติขึ้น GitHub Pages</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-5 p-4 bg-white rounded shadow-sm">
-            <h2 class="text-primary border-bottom pb-2 mb-4">What I Built & Reflection</h2>
-            <h5>องค์ประกอบสำคัญในเว็บไซต์:</h5>
-            <ul>
-                <li><strong>ส่วนหัว (Navbar):</strong> แถบเมนูแบบ Responsive ปรับขนาดได้บนมือถือและคอมพิวเตอร์</li>
-                <li><strong>ส่วนแนะนำตัว (About Me):</strong> แสดงข้อมูลส่วนตัว พร้อมรูปโปรไฟล์ด้วย Grid System</li>
-                <li><strong>ผลงาน (Portfolio):</strong> แสดงผลงาน 2 รายการด้วย Bootstrap Cards</li>
-                <li><strong>การสะท้อนความคิด (Reflection):</strong> สรุปสิ่งที่ได้เรียนรู้ การปรับใช้ Bootstrap และแนวทางการพัฒนาต่อยอด</li>
-            </ul>
-        </section>
-
-    </div>
-
-    <footer id="contact" class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <h3>Contact Me</h3>
-            <p class="mb-1"><strong>Line ID:</strong> pinpin1311</p>
-            <p class="mb-0"><strong>Instagram:</strong> <a href="https://www.instagram.com/naws4p" target="_blank" class="text-info text-decoration-none">naws4p</a></p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary mb-2">Course Assignment</span>
+                            <h4 class="card-title text-primary fw-bold">A2: Responsive Portfolio with Bootstrap</h4>
